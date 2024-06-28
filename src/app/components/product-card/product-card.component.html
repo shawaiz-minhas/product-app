@@ -1,0 +1,20 @@
+<mat-card class="shadow">
+  <img class="h-72" mat-card-image [src]="product.img" />
+  <div class="p-4">
+    <h1>{{ product.brand }}</h1>
+    <h2>{{ product.name }}</h2>
+    <div class="flex gap-2">
+      <span>{{ product.currentPrice }}</span>
+      <span
+        ><s>{{ product.standardPrice }}</s></span
+      >
+      <span>({{ product.discount }}%) OFF</span>
+    </div>
+    <button
+      class="bg-blue-800 text-white p-3 rounded-md shadow"
+      (click)="viewthing()"
+    >
+      View
+    </button>
+  </div>
+</mat-card>

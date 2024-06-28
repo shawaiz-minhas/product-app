@@ -1,0 +1,14 @@
+<mat-form-field class="example-full-width">
+  <input
+    matInput
+    placeholder="Search"
+    class="w-8/12"
+    (change)="onChange($event)"
+  />
+</mat-form-field>
+<button
+  class="bg-blue-800 text-white p-3 rounded-md shadow"
+  (click)="onSearch()"
+>
+  Search
+</button>
